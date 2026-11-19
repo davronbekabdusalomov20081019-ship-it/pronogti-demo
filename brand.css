@@ -31,7 +31,8 @@
 .promo__pct { font-style: normal; }
 
 @media (max-width: 960px) {
-  .hero__title { font-size: 15.5vw; }
+  .hero__title { font-size: 14.5vw; }
+  .hero__title .row { white-space: nowrap; }
   .hero__stage::before { left: auto; right: 8%; top: 120px; width: 64px; }
   .hero__stage::after { right: auto; left: 8%; bottom: 30%; }
   .ftr__word { font-size: 14vw; }
