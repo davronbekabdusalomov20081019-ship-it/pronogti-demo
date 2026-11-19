@@ -1,0 +1,39 @@
+/* Pro.Nogti brand layer: thin geometric type like the logo, bubble from the mural. */
+.h2, .hero__title, .curtain__word, .hdr__logo, .ftr__word, .manifesto__text, .irow h3, .acc__btn span,
+.master h3, .rcard p, .cinfo__addr, .cinfo__phone, .rate b, .irow__p, .acc__row b, .badge b, .mnav a:not(.btn), .arch__cap { font-weight: 300; }
+.h2 { font-size: clamp(40px, 5.6vw, 94px); line-height: 1.02; letter-spacing: -.015em; }
+.h2 i, .hero__title i { font-weight: 300; }
+
+/* logo-like wordmarks: uppercase, airy tracking */
+.hdr__logo, .curtain__word, .ftr__word { text-transform: uppercase; letter-spacing: .1em; }
+.hdr__logo { font-size: 24px; }
+.hdr__logo i, .curtain__word i, .ftr__word i { font-style: normal; }
+.curtain__word { color: #fff; font-size: clamp(44px, 9vw, 140px); }
+.ftr__word { font-size: clamp(48px, 13.5vw, 230px); letter-spacing: .06em; color: #fff; }
+
+.hero__title { text-transform: uppercase; font-size: clamp(54px, 10.2vw, 196px); line-height: .92; letter-spacing: -.01em; }
+.manifesto__text { font-size: clamp(28px, 3.5vw, 54px); line-height: 1.22; letter-spacing: -.005em; }
+.irow h3 { font-size: clamp(36px, 4.8vw, 78px); }
+.rcard p { font-size: 21px; line-height: 1.35; }
+.cinfo__addr { font-size: 30px; }
+.master__ph .letter { font-weight: 300; font-style: normal; }
+
+/* bubble-gum bubble from the wall mural, floating next to the arch */
+.hero__stage::before, .hero__stage::after { content: ''; position: absolute; border-radius: 50%; z-index: 1; pointer-events: none;
+  background: radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .95) 0 7%, #ffb3d6 18%, #ff5aae 62%, #d3177b 100%);
+  box-shadow: 0 30px 60px rgba(211, 23, 123, .28); animation: bub 7s ease-in-out infinite; }
+.hero__stage::before { width: clamp(70px, 8vw, 130px); aspect-ratio: 1; left: 30%; top: 24%; }
+.hero__stage::after { width: clamp(26px, 2.6vw, 44px); aspect-ratio: 1; right: 30%; bottom: 20%; animation-delay: -3s; animation-duration: 9s; }
+@keyframes bub { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-22px) scale(1.06); } }
+
+.badge b { font-weight: 400; }
+.studio__card .h2 { font-size: clamp(36px, 4vw, 62px); }
+.promo__pct { font-style: normal; }
+
+@media (max-width: 960px) {
+  .hero__title { font-size: 15.5vw; }
+  .hero__stage::before { left: auto; right: 8%; top: 120px; width: 64px; }
+  .hero__stage::after { right: auto; left: 8%; bottom: 30%; }
+  .ftr__word { font-size: 14vw; }
+}
+@media (prefers-reduced-motion: reduce) { .hero__stage::before, .hero__stage::after { animation: none; } }

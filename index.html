@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- demo: remove on real launch -->
+<title>Pro.Nogti — ногтевая студия в Курске, маникюр и педикюр в 4 руки</title>
+<meta name="description" content="Маникюр, педикюр, наращивание и френч на пр-те Хрущёва, 22. 5,0 на Яндекс Картах, онлайн-запись, ежедневно 8:00–21:00.">
+<link rel="icon" href="img/logo.webp">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="brand.css?v=1">
+</head>
+<body>
+
+<div class="curtain" id="curtain" aria-hidden="true"><span class="curtain__word" data-logo></span></div>
+<div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+
+<header class="hdr" id="hdr">
+  <nav class="hdr__nav hdr__nav--l" aria-label="Разделы">
+    <a href="#services">Услуги</a><a href="#gallery">Работы</a><a href="#prices">Цены</a>
+  </nav>
+  <a class="hdr__logo" href="#top" aria-label="Наверх" data-logo></a>
+  <nav class="hdr__nav hdr__nav--r">
+    <a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+    <a class="hdr__book" data-booking href="#">Записаться</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mnav" id="mnav">
+  <a href="#services">Услуги</a><a href="#gallery">Работы</a><a href="#studio">Студия</a>
+  <a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+  <a class="btn" data-booking href="#">Записаться онлайн</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO: the central arch grows into a full-screen photo while scrolling. EDIT: 3 title rows, kicker, photos -->
+  <section class="hero" id="hero">
+    <div class="hero__stage">
+      <p class="hero__kicker"><span data-kind></span><span data-city></span><span data-hours-short>ежедневно 8–21</span></p>
+      <h1 class="hero__title">
+        <span class="row row--1"><span>Маникюр</span></span>
+        <span class="row row--2"><span><i>в&nbsp;4&nbsp;руки</i></span></span>
+        <span class="row row--3"><span>и педикюр</span></span>
+      </h1>
+      <figure class="arch arch--side arch--l"><img src="img/hero-left.webp" alt="Маникюр с графикой — Pro.Nogti"></figure>
+      <figure class="arch arch--main" id="heroArch">
+        <img src="img/hero-main.webp" alt="Френч на миндале на фоне росписи студии">
+        <figcaption class="arch__cap">Ровно, стойко — <i>красиво</i></figcaption>
+      </figure>
+      <figure class="arch arch--side arch--r"><img src="img/hero-right.webp" alt="Педикюр, красный гель-лак"></figure>
+      <div class="hero__meta">
+        <a class="rate" data-yandex href="#"><b data-rating></b><span>★★★★★</span><small><span data-rating-count></span> оценок · Яндекс Карты</small></a>
+        <a class="btn" data-booking href="#">Записаться онлайн</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO: words light up while scrolling. EDIT: 2-3 sentences built from real facts of the card -->
+  <section class="manifesto">
+    <p class="eyebrow">О студии</p>
+    <p class="manifesto__text" id="manifesto">Уютная студия на&nbsp;Северо-Западном. Маникюр и&nbsp;педикюр делаем одновременно, в&nbsp;4&nbsp;руки&nbsp;— всё за&nbsp;полтора-два часа. Инструменты проходят сухожар, наборы вскрываем при&nbsp;вас, а&nbsp;пока сохнет покрытие&nbsp;— чай, кофе и&nbsp;что-нибудь вкусное.</p>
+    <div class="badges" id="badges"></div>
+  </section>
+
+  <!-- SERVICES: editorial index with floating photo preview -->
+  <section class="sec services" id="services">
+    <div class="sec__head">
+      <p class="eyebrow">Услуги</p>
+      <h2 class="h2 split">Что мы <i>делаем</i></h2>
+    </div>
+    <ol class="index" id="svcIndex"></ol>
+  </section>
+
+  <!-- GALLERY: three columns moving at different speeds -->
+  <section class="sec gallery" id="gallery">
+    <div class="sec__head sec__head--center">
+      <p class="eyebrow">Работы</p>
+      <h2 class="h2 split">Блик, форма, <i>френч</i></h2>
+    </div>
+    <div class="cols" id="cols">
+      <div class="col" data-speed="-.08"></div>
+      <div class="col" data-speed=".1"></div>
+      <div class="col" data-speed="-.14"></div>
+    </div>
+  </section>
+
+  <!-- STUDIO: interior photos + perks -->
+  <section class="studio" id="studio">
+    <figure class="studio__img"><img src="img/room-main.webp" alt="Зал студии Pro.Nogti" loading="lazy"></figure>
+    <div class="studio__card">
+      <p class="eyebrow">Студия</p>
+      <h2 class="h2 split">Пионы, пузырь <i>и&nbsp;чай</i></h2>
+      <ul class="perks" id="perks"></ul>
+    </div>
+    <div class="studio__strip">
+      <figure><img src="img/room-busy.webp" alt="Мастера за работой" loading="lazy"></figure>
+      <figure><img src="img/room-mural.webp" alt="Роспись на стене студии" loading="lazy"></figure>
+      <figure><img src="img/room-dog.webp" alt="Гостья студии с собакой" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- MASTERS (drop the section if the card has no team info) -->
+  <section class="sec masters" id="masters">
+    <div class="sec__head">
+      <p class="eyebrow">Мастера</p>
+      <h2 class="h2 split">Те, к кому <i>возвращаются</i></h2>
+    </div>
+    <div class="masters__grid" id="mastersGrid"></div>
+  </section>
+
+  <!-- PRICES: accordion + optional promo -->
+  <section class="sec prices" id="prices">
+    <div class="prices__grid">
+      <div class="prices__aside">
+        <p class="eyebrow">Цены</p>
+        <h2 class="h2 split">Прайс <i>студии</i></h2>
+        <p class="muted">Цены из прайса студии. Свободные окошки мастеров видно в онлайн-записи DIKIDI.</p>
+        <a class="btn" data-booking href="#">Выбрать время</a>
+        <div class="promo" id="promo" hidden>
+          <span class="promo__pct"></span>
+          <p><b></b> <span></span></p>
+        </div>
+      </div>
+      <div class="acc" id="acc"></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS: two marquee rows -->
+  <section class="reviews" id="reviews">
+    <div class="sec__head sec__head--center">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="h2 split">Нам <i>пишут</i></h2>
+      <a class="rate rate--center" data-yandex href="#"><b data-rating></b><span>★★★★★</span><small><span data-review-count></span> отзывов на Яндекс Картах →</small></a>
+    </div>
+    <div class="rrow" id="rrow1"><div class="rrow__track"></div></div>
+    <div class="rrow rrow--rev" id="rrow2"><div class="rrow__track"></div></div>
+  </section>
+
+  <!-- CONTACTS: map.png = Yandex static map screenshot of the address -->
+  <section class="sec contacts" id="contacts">
+    <div class="contacts__grid">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2 class="h2 split">Приходите <i>в гости</i></h2>
+        <div class="cinfo">
+          <p class="cinfo__addr" data-address></p>
+          <p class="muted" data-near></p>
+          <p class="cinfo__hours"><span data-hours></span> <span class="status" data-status><i></i><b>—</b></span></p>
+          <a class="cinfo__phone" data-phone href="#"></a>
+          <div class="msgr"><a data-wa href="#">WhatsApp</a><a data-tg href="#">Telegram</a><a data-vk href="#">ВКонтакте</a></div>
+        </div>
+        <div class="contacts__cta">
+          <a class="btn" data-booking href="#">Записаться онлайн</a>
+          <a class="btn btn--line" data-route href="#">Маршрут</a>
+        </div>
+      </div>
+      <a class="map" data-yandex href="#" aria-label="Открыть на Яндекс Картах">
+        <img src="img/map.png" alt="Карта" loading="lazy">
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr__word" data-logo></div>
+  <div class="ftr__row">
+    <span><span data-kind></span> · <span data-city></span></span>
+    <span data-address-short></span>
+    <a data-phone href="#"></a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="mbar__call" data-phone-icon href="#">Позвонить</a>
+  <a class="mbar__book" data-booking href="#">Записаться</a>
+</div>
+<div class="demo-badge">Демо-версия сайта</div><!-- demo: remove on real launch -->
+
+<script src="data.js?v=1"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/SplitText.min.js"></script>
+<script src="main.js?v=1"></script>
+</body>
+</html>
